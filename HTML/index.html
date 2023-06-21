@@ -17,54 +17,56 @@
     <main class="container-fluid">
         <div class="row r1">
 
-            <aside class="col-sm-6 left text-center">
+            <aside id="player1" class="col-sm-6 left text-center">
                 <div class="row h-25">
                     <div class="col-sm"></div>
                 </div>
                 <div class="row h-25">
-                    <div class="col-sm"><h1>PLAYER 1</h1><p class="score">0</p></div>
+                    <div class="col-sm"><h1>PLAYER 1</h1><p class="score" id="global1">0</p></div>
                 </div>
                 <div class="row h-25">
                     <div class="col-sm"></div>
                 </div>
                 <div class="row h-25">
                     <div class="col-sm-6">
-                        <div class="scoreBox"><h5>CURRENT</h5><p style="color:white">0</p></div>
+                        <div class="scoreBox"><h5>CURRENT</h5><p style="color:white" id="round1">0</p></div>
                     </div>
                 </div>
             </aside>
 
             <section class="col-sm-3 text-center">
                 <div class="row h-25">
-                <div class="col-sm"><button><span class="material-symbols-outlined icons">add_circle</span><h6>NEW GAME</h6></button></div>
+                <div class="col-sm"><button id="newGame"><span class="material-symbols-outlined icons">add_circle</span><h6>NEW GAME</h6></button></div>
                 </div>
                 <div class="row h-50">
-                    <div class="col-sm"></div>
+                    <div class="col-sm">
+                    </div>
                 </div>
                 <div class="row h-25">
-                    <div><button><span class="material-symbols-outlined icons">refresh</span><h6>ROLL DICE</h6></button></div>
-                    <div><button><span class="material-symbols-outlined icons">place_item</span><h6>HOLD</h6></button></div>
+                    <div><button id="roll"><span class="material-symbols-outlined icons">refresh</span><h6>ROLL DICE</h6></button></div>
+                    <div><button id="hold"><span class="material-symbols-outlined icons">place_item</span><h6>HOLD</h6></button></div>
                 </div>
             </section>
 
-            <aside class="col-sm-6 right text-center">
+            <aside id="player2" class="col-sm-6 right text-center">
                 <div class="row h-25">
                     <div class="col-sm"></div>
                 </div>
                 <div class="row h-25">
-                    <div class="col-sm"><h1>PLAYER 2</h1><p class="score">0</p></div>
+                    <div class="col-sm"><h1>PLAYER 2</h1><p class="score" id="global2">0</p></div>
                 </div>
                 <div class="row h-25">
                     <div class="col-sm"></div>
                 </div>
                 <div class="row h-25">
                     <div class="col-sm-6">
-                        <div class="scoreBox"><h5>CURRENT</h5><p style="color:white">0</p></div>
+                        <div class="scoreBox"><h5>CURRENT</h5><p style="color:white" id="round2">0</p></div>
                     </div>
                 </div>
             </aside>
         </div>
     </main>
-    <script src=""></script>
+
+    <script type="text/javascript" src="/JS/script.js"></script>
 </body>
 </html>

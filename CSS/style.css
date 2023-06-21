@@ -23,7 +23,6 @@ aside{
   float:left;
   width: 50%;
   min-height: 100%;
-  background-color: #dbdbdb;
 }
 
 .right{
@@ -44,6 +43,12 @@ section{
     min-height: 80%;
     padding: 3%;
     background-color:transparent;
+}
+
+canvas{
+    display: block;
+    margin:-0.8rem;
+    background-color: aqua;
 }
 
 .scoreBox{
