@@ -20,7 +20,20 @@ btnRoll.addEventListener('click', () => {
     document.getElementById('round1').innerHTML = scoreRound1;
 })
 
-btnHold.addEventListener('click', () => {
-    scoreGlobal1 = scoreRound1 ; 
+btnHold.addEventListener('click', () => { 
+    if (scoreGlobal1 > 99){
+        scoreRound1 = 0;
+        document.getElementById('round1').innerHTML = scoreRound1;
+        document.getElementById('global1').innerHTML = "Winner";
+    } else if (scoreGlobal1 < 100) {
+        scoreGlobal1 = scoreGlobal1 + scoreRound1;
+        document.getElementById('global1').innerHTML = scoreGlobal1;
+    }
+})
+
+btnNewGame.addEventListener('click', () => {
+    scoreRound1 = 0;
+    scoreGlobal1 = 0;
+    document.getElementById('round1').innerHTML = scoreRound1;
     document.getElementById('global1').innerHTML = scoreGlobal1;
 })
