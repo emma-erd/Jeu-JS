@@ -45,12 +45,6 @@ section{
     background-color:transparent;
 }
 
-canvas{
-    display: block;
-    margin:-0.8rem;
-    background-color: aqua;
-}
-
 .scoreBox{
     position:relative;
     left:60%;
